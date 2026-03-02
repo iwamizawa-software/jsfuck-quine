@@ -18,7 +18,7 @@ function f(Q){
         P[D]||"(+('"+B+"'))['to'+([]+[])"+C+"['name']]('36')";
   U='dl0ta12f4ns3rNu5';
   A+=C+"('eval(unescape(\""+(Q='eval(Q='+JSON.stringify(Q)+')').replace(/./g,s=>U[(V=s.charCodeAt())>>4]+U[V&15]);
-  for(A+="\".replace(/./g,(f,t)=>\"%\".slice(t<<31<0)+\""+U+"\".match(f).index.toString(16))))')()",R=0;R<9;R++)
+  for(A+="\".replace(/./g,(f,t)=>\"%\".slice(t<<31<0)+\""+U+"\".search(f).toString(16))))')()",R=0;R<6;R++)
     A=A.replace(/'.*?'/g,function(B){
       T=[];
       for(E=1;B[E+1];)
