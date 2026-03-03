@@ -1,30 +1,24 @@
-function f(Q){
-  P={0:'[+[]]',m:'((+[])'+(C="['constructor']")+"+[])['11']"};
-  for(R in B=
-    (
-      '!![]@![]@[][[]]@+[![]]@'+
-      (A="[]['fill']")+
-      "@([]+[])['fontcolor']([])@+('11e20')@(![]+[])['split']([])@([]+[])"+C+"@"+
-      A+C+"('return escape')()("+A+')'
-    ).split('@')
-  )
-    for(E in D=eval(G='('+B[R]+'+[])'))
-      P[T=D[E]]=P[T]||G+"['"+E+"']";
-  for(G='[',B=0;++B<36;)
-    P[D=B.toString(36)]=
-      B<10?
-        (G+='+!+[]')+']'
-      :
-        P[D]||"(+('"+B+"'))['to'+([]+[])"+C+"['name']]('36')";
-  U='dl0ta12f4ns3rNu5';
-  A+=C+"('eval(unescape(\""+(Q='eval(Q='+JSON.stringify(Q)+')').replace(/./g,s=>U[(V=s.charCodeAt())>>4]+U[V&15]);
-  for(A+="\".replace(/./g,(f,t)=>\"%\".slice(t<<31<0)+\""+U+"\".search(f).toString(16))))')()",R=0;R<6;R++)
-    A=A.replace(/'.*?'/g,function(B){
-      T=[];
-      for(E=1;B[E+1];)
-        T.push(P[B[E++]]);
-      return T.join('+')
-    });
-  console.log(A)
+function f(W){
+S={0:'[+[]]'};
+for(R in B=
+('!![]&![]&[][[]]&+[![]]&'+
+(b=`[]['at']`)+
+`&([]+[])['fontcolor']()&+('11e20')&(![]+[])['split']([])&([]+[])`+(e=`['constructor']`)+`&`+
+b+e+`('return escape')()(` +b+')&(+[])'+e
+).split('&')
+)
+for(F in r=eval(v='('+B[R]+'+[])'))
+S[g=r[F]]=S[g]||v+`['`+F+`']`;
+for(v='[',B=0;++B<36;)
+S[r=B.toString(36)]=
+B<10?
+(v+='+!+[]')+']'
+:
+S[r]||`(+('`+B+`'))['to'+([]+[])`+e+`['name']]('36')`;
+U='nd0tu21frNe34al5';
+b+=e+`('eval(unescape("`+(W='eval(W='+JSON.stringify(W)+')').replace(/./g,l=>U[(V=l.charCodeAt())>>4]+U[V&15]);
+for(b+=`".replace(/./g,(f,r)=>"%".slice(r<<31<0)+"`+U+`".search(f).toString(16))))')()`,R=7;R--;)
+b=b.replace(/'.*?'/g,B=>[...B].slice(1,-1).map(b=>S[b]).join('+'));
+console.log(b)
 }
 f(f.toString().replace(/^ +| +$/mg, "").split("\n").slice(1, -1).join(""))
